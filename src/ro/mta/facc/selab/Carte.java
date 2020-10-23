@@ -8,14 +8,7 @@ public class Carte implements Comparable<Carte> {
 
     @Override
     public int compareTo(Carte o) {
-        if (this.nrPagini < o.nrPagini)
-            return -1;
-        if (this.nrPagini > o.nrPagini)
-            return 1;
-
-        return 0;
-
-       // return Integer.compare(this.nrPagini, o.nrPagini);   echiv cu ce e mai sus
+       return Integer.compare(this.nrPagini, o.nrPagini);   //echiv cu ce e mai sus
     }
 
     public Carte(String titlu, String autor, int anPublicatie, int nrPagini) {
